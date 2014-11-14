@@ -39,7 +39,11 @@ class Kirchbergerknorr_FactFinderExport_Model_Export_Product extends Flagbit_Fac
         {
             case('started'):
                 $this->log("Export started");
-                unlink($this->csvFileName);
+
+                if (file_exists($this->csvFileName)) {
+                    unlink($this->csvFileName);
+                }
+
                 file_put_contents($this->csvFileName.".processing", '');
                 break;
 
@@ -83,6 +87,7 @@ class Kirchbergerknorr_FactFinderExport_Model_Export_Product extends Flagbit_Fac
         $limit = Mage::getStoreConfig('kirchbergerknorr/factfinderexport/queue');
 
         $this->lastProductId = $lastProductId;
+        $this->log("Current ProductId: {$lastProductId}");
 
         return parent::_getSearchableProducts($storeId, $staticFields, $productIds, $lastProductId, $limit);
     }
