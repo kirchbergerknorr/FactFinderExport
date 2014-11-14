@@ -11,7 +11,7 @@
                 <enabled>1</enabled>
                 <log>1</log>
                 <queue>100</queue>
-                <cron>0 4 6 * *</cron>
+                <cron>0 4 * * 6</cron>
                 <export_path>/media/factfinder.csv</export_path>
             </factfinderexport>
         </kirchbergerknorr>
