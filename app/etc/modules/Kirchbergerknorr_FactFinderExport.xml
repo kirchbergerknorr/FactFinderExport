@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Kirchbergerknorr_FactFinderExport>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Flagbit_FactFinder />
+            </depends>
+        </Kirchbergerknorr_FactFinderExport>
+    </modules>
+</config>

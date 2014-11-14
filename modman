@@ -1,0 +1,6 @@
+app/code/community/Kirchbergerknorr/FactFinderExport/etc/config.xml app/code/community/Kirchbergerknorr/FactFinderExport/etc/config.xml
+app/code/community/Kirchbergerknorr/FactFinderExport/etc/system.xml app/code/community/Kirchbergerknorr/FactFinderExport/etc/system.xml
+app/code/community/Kirchbergerknorr/FactFinderExport/Model/Export/Product.php app/code/community/Kirchbergerknorr/FactFinderExport/Model/Export/Product.php
+app/code/community/Kirchbergerknorr/FactFinderExport/Model/Observer.php app/code/community/Kirchbergerknorr/FactFinderExport/Model/Observer.php
+app/etc/modules/Kirchbergerknorr_FactFinderExport.xml app/etc/modules/Kirchbergerknorr_FactFinderExport.xml
+shell/factfinderexport.php shell/factfinderexport.php

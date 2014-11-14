@@ -1,0 +1,8 @@
+{
+    "name": "kirchbergerknorr/factfinder-export",
+    "description": "Kirchbergerknorr FactFinderExport",
+    "type": "magento-module",
+    "authors": [
+        {"name": "Aleksey Razbakov", "email": "ar@kirchbergerknorr.de"}
+    ]
+}
