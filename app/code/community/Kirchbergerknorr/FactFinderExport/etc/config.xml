@@ -36,6 +36,13 @@
         </jobs>
     </crontab>
     <adminhtml>
+        <layout>
+            <updates>
+                <kk_factfinderexport>
+                    <file>kk_factfinderexport.xml</file>
+                </kk_factfinderexport>
+            </updates>
+        </layout>
         <acl>
             <resources>
                 <all>
