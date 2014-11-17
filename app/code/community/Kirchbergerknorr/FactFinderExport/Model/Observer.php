@@ -15,17 +15,15 @@ class Kirchbergerknorr_FactFinderExport_Model_Observer
 
     public function log($message)
     {
-        Mage::log($message, null, self::LOGFILE);
+        Mage::log($message, null, self::LOGFILE.'.log');
 
         if (defined('FACTFINDEREXPORT_ECHO_LOGS')) {
             echo date("H:i:s").": ".$message."\n";
         }
     }
 
-    public function export($observer = null)
+    public function export($observer = null, $reStart = true)
     {
-        $this->log('FactFinderExport export()');
-
         if (!Mage::getStoreConfig('kirchbergerknorr/factfinderexport/enabled')) {
             $this->log('FactFinderExport is disabled');
             return false;
@@ -38,7 +36,7 @@ class Kirchbergerknorr_FactFinderExport_Model_Observer
         }
 
         try {
-            Mage::getModel('factfinderexport/export_product')->doExport(1);
+            Mage::getModel('factfinderexport/export_product')->doExport(1, $reStart);
         } catch (Exception $e) {
             $this->log($e->getMessage());
         }
