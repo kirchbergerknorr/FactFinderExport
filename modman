@@ -1,6 +1,11 @@
 app/code/community/Kirchbergerknorr/FactFinderExport/etc/config.xml app/code/community/Kirchbergerknorr/FactFinderExport/etc/config.xml
 app/code/community/Kirchbergerknorr/FactFinderExport/etc/system.xml app/code/community/Kirchbergerknorr/FactFinderExport/etc/system.xml
+app/code/community/Kirchbergerknorr/FactFinderExport/Helper/Adminhtml.php app/code/community/Kirchbergerknorr/FactFinderExport/Helper/Adminhtml.php
 app/code/community/Kirchbergerknorr/FactFinderExport/Model/Export/Product.php app/code/community/Kirchbergerknorr/FactFinderExport/Model/Export/Product.php
 app/code/community/Kirchbergerknorr/FactFinderExport/Model/Observer.php app/code/community/Kirchbergerknorr/FactFinderExport/Model/Observer.php
+app/design/adminhtml/default/default/layout/kk_factfinderexport.xml app/design/adminhtml/default/default/layout/kk_factfinderexport.xml
 app/etc/modules/Kirchbergerknorr_FactFinderExport.xml app/etc/modules/Kirchbergerknorr_FactFinderExport.xml
+factfinder.php factfinder.php
+js/factfinderexport.js js/factfinderexport.js
+js/jquery-1.11.0.min.js js/jquery-1.11.0.min.js
 shell/factfinderexport.php shell/factfinderexport.php
