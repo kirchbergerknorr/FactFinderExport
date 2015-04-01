@@ -1,6 +1,6 @@
 jQuery(function($){
     var $cronrow = $('#row_kirchbergerknorr_factfinderexport_cron');
-    if ($cronrow) {
+    if ($cronrow.length) {
 
         $cronrow.after('<tr id="row_kirchbergerknorr_factfinderexport_progress"><td class=label>Progress</td><td class="value"><span id="ff_last">...</span><br><span id="ff_status">...</span><br><a href="#" id="factfinder_restart">Restart</a> | <a href="#" id="factfinder_start">Continue</a> | <a href="#" id="factfinder_stop">Stop</a></td></tr>');
 
