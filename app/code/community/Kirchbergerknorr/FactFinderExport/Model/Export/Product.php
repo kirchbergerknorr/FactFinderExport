@@ -67,7 +67,9 @@ class Kirchbergerknorr_FactFinderExport_Model_Export_Product extends Flagbit_Fac
                 break;
 
             case('finished'):
-                unlink($this->csvFileName.".run");
+                unlink($this->csvFileName.".locked");
+                unlink($this->csvFileName.".last");
+                unlink($this->csvFileName.".run"); 
                 rename($this->csvFileName.".processing", $this->csvFileName);
 
                 $this->log("Export finished at {$this->lastProductId}");
